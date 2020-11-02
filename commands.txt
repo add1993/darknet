@@ -1,0 +1,2 @@
+ ./darknet detector test cfg/coco.data cfg/yolov4-tiny.cfg yolov4-tiny.weights testimage.jpg
+ python3 darknet_images.py --data_file cfg/coco.data --config_file cfg/yolov4-tiny.cfg --weights yolov4-tiny.weights --input testimage.jpg
