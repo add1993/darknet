@@ -1,0 +1,2 @@
+FLASK_ENV=development FLASK_APP=darknet_webapp.py flask run
+python darknet_images.py --data_file cfg/coco.data --config_file cfg/yolov4-tiny.cfg --weights yolov4-tiny.weights  --input /home/axd170033/person_detection/darknet/VOCdevkit/VOC2012/JPEGImages/2011_003152.jpg
