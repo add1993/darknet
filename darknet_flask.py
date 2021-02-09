@@ -207,9 +207,9 @@ def detect():
             image, detections = image_detection(
                 np.array(image_pil), network, class_names, class_colors, args.thresh
             )
-            darknet.print_detections(detections, args.ext_output)
-            fps = int(1/(time.time() - prev_time))
+            #darknet.print_detections(detections, args.ext_output)
+            #fps = int(1/(time.time() - prev_time))
 
-        return jsonify("")
+        return jsonify(detections)
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=5000, debug=True, processes=1)
